@@ -1,0 +1,484 @@
+.client-my-files-page {
+  width: 100vw;
+  height: 100vh;
+  background: #eaf2ff;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  overflow: hidden;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.client-my-files-page > .client-portal-sidebar {
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+}
+
+.client-my-files-main {
+  height: 100vh;
+  padding: 28px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.client-my-files-header {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.client-my-files-header h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.client-my-files-header p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+.client-my-files-badge {
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 999px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.client-my-files-stats {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.client-my-file-stat-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.client-my-file-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.client-my-file-stat-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.client-my-file-stat-icon.blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.client-my-file-stat-icon.green {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.client-my-file-stat-icon.orange {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.client-my-file-stat-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.client-my-file-stat-card h3 {
+  margin: 5px 0 0;
+  color: #0f172a;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.client-my-file-panel {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  margin-top: 22px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.client-my-file-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.client-my-file-panel-header h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.client-my-file-panel-header p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.client-my-file-search {
+  width: 310px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 11px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.client-my-file-search svg {
+  color: #64748b;
+}
+
+.client-my-file-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 13px 0;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.client-my-file-list {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.client-my-file-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 1.3fr 1.3fr 0.7fr 0.8fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.client-my-file-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.client-my-file-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: #dbeafe;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.client-my-file-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.client-my-file-left h3,
+.client-my-file-info h4 {
+  margin: 0 0 5px;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.client-my-file-left p,
+.client-my-file-left small,
+.client-my-file-info p,
+.client-my-file-info small {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.client-my-file-left p,
+.client-my-file-info small,
+.client-my-file-info h4 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.client-my-file-status {
+  width: fit-content;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.client-my-file-status.available {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.client-my-file-status.awaiting {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.client-my-file-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.client-my-file-actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #eef2ff;
+  color: #082456;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.client-my-file-actions button:hover:not(:disabled) {
+  background: #dbeafe;
+}
+
+.client-my-file-actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.client-my-file-note {
+  margin-top: 22px;
+  background: #ecfdf5;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-my-file-note p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1300px) {
+  .client-my-files-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client-my-file-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .client-my-file-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 900px) {
+  .client-my-files-page {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .client-my-files-page > .client-portal-sidebar {
+    display: none;
+  }
+
+  .client-my-files-main {
+    height: auto;
+    min-height: 100vh;
+    padding: 18px;
+  }
+
+  .client-my-files-header,
+  .client-my-file-panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .client-my-files-badge,
+  .client-my-file-search {
+    width: 100%;
+    justify-content: center;
+    border-radius: 12px;
+  }
+
+  .client-my-files-stats,
+  .client-my-file-card {
+    grid-template-columns: 1fr;
+  }
+}
+.client-my-files-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.client-my-files-refresh-btn {
+  background: #ffffff;
+  color: #082456;
+  border: 1px solid #dbe4f0;
+  border-radius: 10px;
+  padding: 13px 18px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+}
+
+.client-my-files-refresh-btn:hover {
+  background: #f8fafc;
+}
+
+.client-my-files-refresh-btn:disabled,
+.client-my-file-actions button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.client-my-files-message {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.client-my-files-message.success {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.client-my-files-message.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.client-my-file-empty-state {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  color: #64748b;
+  font-weight: 700;
+  border: 1px solid #e2e8f0;
+  box-sizing: border-box;
+}
+
+.client-my-file-status.correction {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.client-my-file-status.normal {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.client-my-file-search {
+  width: 360px;
+  min-width: 360px;
+  height: 52px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 14px;
+  padding: 0 15px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
+  outline: none !important;
+}
+
+.client-my-file-search:focus-within {
+  border-color: #082456 !important;
+  box-shadow: 0 0 0 4px rgba(8, 36, 86, 0.1);
+}
+
+.client-my-file-search input {
+  height: 100%;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  font-weight: 600;
+}
+
+.client-my-file-search input:focus,
+.client-my-file-search input:focus-visible {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 900px) {
+  .client-my-files-header-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .client-my-files-refresh-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .client-my-file-search {
+    width: 100%;
+    min-width: 100%;
+  }
+}

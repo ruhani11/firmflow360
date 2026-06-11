@@ -1,0 +1,69 @@
+.client-portal-sidebar {
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+  background: #082456;
+  color: #ffffff;
+  padding: 26px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.client-portal-sidebar h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.client-portal-sidebar p {
+  margin: 6px 0 28px;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.client-portal-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.client-portal-sidebar nav a {
+  color: #dbeafe;
+  text-decoration: none;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s ease;
+}
+
+.client-portal-sidebar nav a:hover,
+.client-portal-sidebar nav a.active {
+  background: #ffffff;
+  color: #082456;
+}
+
+.client-portal-logout {
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  justify-content: center;
+}
+
+.client-portal-logout:hover {
+  background: #dc2626;
+}

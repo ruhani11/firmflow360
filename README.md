@@ -1,5 +1,4 @@
 
-```markdown
 # FirmFlow 360 — Practice Management Platform for CA Firms
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)

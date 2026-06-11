@@ -152,6 +152,3 @@ npm start
 > ⚠️ This project is currently in active development. Features and structure may change.
 ```
 
----
-
-Seedha copy karo aur `README.md` file mein paste kar do. Sirf GitHub repo URL ek jagah update karna hai — line 3 mein `git clone` ke baad apna actual URL daalna. ✅

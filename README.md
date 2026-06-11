@@ -92,7 +92,7 @@ firmflow-360/
 
 ```bash
 # Clone the repo
-git clone https://github.com/ruhani11/firmflow-360.git
+git clone https://github.com/ruhani11/firmflow360.git
 cd firmflow-360
 
 # Install server dependencies
